@@ -7,27 +7,27 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body>
+    <body class="bg-zinc-800">
         <nav class="border-b border-gray-300">
             <div class="max-w-6xl mx-auto py-2 px-6 xl:px-0 flex items-center justify-between">
-                <div class="menu-left flex items-center space-x-6">
+                <div class="menu-left flex items-center space-x-6 text-fuchsia-300">
                     <a href="#" class="py-4 text-lg text-fuchsia-500 font-semibold">E-shop</a>
 
                     <ul class="flex items-center space-x-4">
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="{% url 'shop' %}">Shop</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
 
                 <div class="menu-right flex items-center space-x-4">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="fuchsia">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </a>
 
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="fuchsia">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                         </svg>
                     </a>
@@ -40,21 +40,21 @@
             {% endblock %}
         </main>
 
-        <footer class="bg-gray-100">
+        <footer class="bg-fuchsia-500">
             <div class="max-w-6xl mx-auto py-10 px-6 xl:px-0 md:flex justify-between">
                 <div class="footer-left mb-12 md:mb-0">
-                    <h2 class="mb-5 uppercase text-lg text-fuchsia-600 ">About us</h2>
+                    <h2 style="text-shadow: 2px 2px 8px #FFFF00" class="mb-5 uppercase text-lg text-white">About us</h2>
 
-                    <p class="text-gray-700">This is an e-commerce market shop</p>
+                    <p class="text-yellow-100">This is an e-commerce market shop</p>
                 </div>
 
                 <div class="footer-right">
-                    <h2 class="mb-5 uppercase text-lg">Social links</h2>
+                    <h2 class="mb-5 uppercase text-lg text-zinc-900">Social links</h2>
 
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-fuchsia-500 hover:text-fuchsia-800">Facebook</a></li>
-                        <li><a href="#" class="text-fuchsia-500 hover:text-fuchsia-800">Twitter</a></li>
-                        <li><a href="#" class="text-fuchsia-500 hover:text-fuchsia-800">Instagram</a></li>
+                        <li><a href="#" class="text-yellow-200 hover:text-fuchsia-800">Facebook</a></li>
+                        <li><a href="#" class="text-yellow-200 hover:text-fuchsia-800">Twitter</a></li>
+                        <li><a href="#" class="text-yellow-200 hover:text-fuchsia-800">Instagram</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,35 +1,47 @@
 {% extends 'website_app/base.html' %}
 
 {% block content %}
-<header class="px-6 py-10 lg:py-20 bg-fuchsia-500">
-    <div class="max-w-3xl mx-auto text-center">
-        <p style="text-shadow: 2px 2px 8px #FFFF00" class="mb-2 text-3xl lg:text-5xl text-white">Welcome to e-commerce shop</p>
+<div class="max-w-6xl mx-auto flex flex-wrap items-start py-2 px-6 xl:px-0">
+    <div class="filters w-full lf:w-1/4">
+        <h3 class="mb-3 text-xl uppercase">Search</h3>
+        <form>
+            <div class="flex">
+                <input type="text" class="p-4 bg-purple-100 border-0" placeholder="Search...">
+                <button class="p-4 bg-purple-200 border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </form>
+        <h3 class="mt-6 mb-3 text-xl uppercase">Categories</h3>
 
-        <p class="mb-10 text-yellow-200">We sell future and modern products for everyone, everywhere, every time</p>
-
-        <a href="#" class="inline-block px-8 py-4 rounded-xl bg-white text-fuchsia-700 hover:bg-gray-200">Start shopping</a>
+        <ul class="space-y-2">
+            <li><a href="#" class="text-purple-500">All categories</a></li>
+            <li><a href="#" class="text-gray-500">Books</a></li>
+            <li><a href="#" class="text-gray-500">Movies</a></li>
+            <li><a href="#" class="text-gray-500">Music</a></li>
+        </ul>
     </div>
-</header>
 
-<div class="max-w-6xl mx-auto py-2 px-6 xl:px-0">
-    <div class="products flex items-center flex-wrap">
+    <div class="products w-full lg:w-3/4 flex items-center flex-wrap">
         {% for product in products %}
         <div class="w-full md:w-1/3 xl:w-1/4 p-6">
             <a href="#">
                 <img class="rounded-xl hover:shadow-lg">
             </a>
 
-            <div style="text-shadow: 0px 2px 3px #FFFF00"class="pt-3 flex items-center justify-between text-fuchsia-400">
+            <div class="pt-3 flex items-center justify-between">
                 <a href="#">{{ product.name }}</a>
 
-                <a href="#" class="text-fuchsia-700 hover:text-fuchsia-500">
+                <a href="#" class="text-fuchsia-500 hover:text-fuchsia-800">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                     </svg>
                 </a>
             </div>
 
-            <p class="pt-1 text-yellow-100">$9.99</p>
+            <p class="pt-1 text-gray-400">$9.99</p>
         </div>
         {% endfor %}
 
