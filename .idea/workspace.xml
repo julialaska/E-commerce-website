@@ -4,7 +4,9 @@
     <list default="true" id="0f1df33c-9965-442f-8fdf-8f97ac626f1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eccomerce_website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/eccomerce_website/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eccomerce_website/eccomerce_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/eccomerce_website/eccomerce_website/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eccomerce_website/eccomerce_website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/eccomerce_website/eccomerce_website/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eccomerce_website/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/eccomerce_website/product/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eccomerce_website/websiteapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/eccomerce_website/websiteapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
