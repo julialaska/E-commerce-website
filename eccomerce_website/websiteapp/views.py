@@ -29,7 +29,7 @@ def signup(request):
     return render(request, 'website_app/signup.html', {'form': form})
 
 
-def login(request):
+def login_old(request):
     return render(request, 'website_app/login.html')
 
 
