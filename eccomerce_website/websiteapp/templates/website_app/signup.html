@@ -6,6 +6,12 @@
         <h1 class="mb-6 text-2xl">Sign up</h1>
 
         <form method="post" action="." class="space-y-3">
+            {% csrf_token %}
+
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
+            </div>
             <div>
                 <label>First name</label>
                 <input type="text" name="first_name" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
@@ -28,7 +34,15 @@
             </div>
 
             {% if form.errors %}
-                {% for field in field.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div class="p-6 bg-red-300 text-red-800 rounded-xl">
+                            <p> {{ error|escape }} </p>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+
+                {% for error in form.non_field_errors %}
                     <div class="p-6 bg-red-300 text-red-800 rounded-xl">
                         <p> {{ error|escape }} </p>
                     </div>
